@@ -26,7 +26,8 @@ O que esse Dockerfile faz:
     por padrão roda o código main.py
 
 Cada vezes que eu mudar o código e quiser rodar para ver a mudança preciso 
-criar uma nova imagem e rodar um container: Sim
+criar uma nova imagem e rodar um container: Não necessariamente, durante o desenvolvimento
+pode mapear o volume do host (código) com o volume do container.
 
 Porém o docker não vai fazer tudo do zero tem um esquema de cache envolvido.
 É indicado por o que muda com frequência em baixo do Dockefile.
@@ -65,6 +66,9 @@ output
 
 ### Conclusão
 
+Antes eu achava que tinha que construir a image tudo de novo para cada mudança,<br>
+durante o desenvolvimento não é necessario, veja [docker-dev](https://github.com/alexaleluia12/docker-dev).
+
 Sempre que houver uma alteração no código e quiser ver o resultado é necessário
-construir a imagem novamente e executar um container.
+executar um container apartir da imagem.
 

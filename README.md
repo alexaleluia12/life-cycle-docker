@@ -66,8 +66,8 @@ output
 
 ### Conclusão
 
-Antes eu achava que tinha que construir a image tudo de novo para cada mudança,<br>
-durante o desenvolvimento não é necessario, veja [docker-dev](https://github.com/alexaleluia12/docker-dev).
+Antes eu achava que tinha que construir a imagem tudo de novo para cada mudança,<br>
+durante o desenvolvimento não é necessário, veja [docker-dev](https://github.com/alexaleluia12/docker-dev).
 
 Sempre que houver uma alteração no código e quiser ver o resultado é necessário
 executar um container apartir da imagem.
